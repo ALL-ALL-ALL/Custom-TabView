@@ -9,9 +9,20 @@ import SwiftUI
 
 struct rougeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack {
+            Color(.red)
+            
+            Image(systemName: "3.circle.fill")
+                .font(.system(size: 120))
+                .foregroundColor(.white)
+            
+        } // fin zstack
+        .edgesIgnoringSafeArea(.top)
+
+        
+        
+    } // fin body
+} // fin struct
 
 #Preview {
     rougeView()

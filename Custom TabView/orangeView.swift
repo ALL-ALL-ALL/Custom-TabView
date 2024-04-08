@@ -9,9 +9,20 @@ import SwiftUI
 
 struct orangeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack {
+            Color(.orange)
+            
+            Image(systemName: "4.circle.fill")
+                .font(.system(size: 120))
+                .foregroundColor(.white)
+            
+        } // fin zstack
+        .edgesIgnoringSafeArea(.top)
+
+        
+        
+    } // fin body
+} // fin struct
 
 #Preview {
     orangeView()

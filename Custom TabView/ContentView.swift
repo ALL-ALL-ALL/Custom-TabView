@@ -13,12 +13,12 @@ struct ContentView: View {
             
             Text("Hello, world!")
                 .foregroundColor(.blue)
+                .colorInvert()
             
             
             
             
         } // fin vstack
-        .padding()
     } // fin body
 } // fin struct
 
