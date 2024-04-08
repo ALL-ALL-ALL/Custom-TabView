@@ -9,16 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        TabView {
+                    noirView()
+                        .tabItem {
+
+                            Image(systemName: "1.circle.fill")
+                        }
             
-            Text("Hello, world!")
-                .foregroundColor(.blue)
-                .colorInvert()
+                    vertView()
+                        .tabItem {
+
+                            Image(systemName: "2.circle.fill")
+                        }
             
+                    rougeView()
+                        .tabItem {
+
+                            Image(systemName: "3.circle.fill")
+                        }
             
-            
-            
-        } // fin vstack
+                    orangeView()
+                        .tabItem {
+
+                            Image(systemName: "4.circle.fill")
+                        }
+                }
     } // fin body
 } // fin struct
 
