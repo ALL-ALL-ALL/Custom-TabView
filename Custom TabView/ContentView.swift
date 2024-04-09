@@ -13,7 +13,9 @@ struct ContentView: View {
                     noirView()
                         .tabItem {
 
-                            Image(systemName: "1.circle.fill")
+                                Image(systemName: "1.circle.fill")
+                            
+
                         }
             
                     vertView()
@@ -33,7 +35,11 @@ struct ContentView: View {
 
                             Image(systemName: "4.circle.fill")
                         }
-                }
+            
+            
+                } // fin tabview
+        
+        
     } // fin body
 } // fin struct
 
