@@ -10,15 +10,16 @@ import SwiftUI
 struct noirView: View {
     var body: some View {
         ZStack {
+            
             Color(.black)
             
             Image(systemName: "1.circle.fill")
                 .font(.system(size: 120))
                 .foregroundColor(.white)
             
+            
         } // fin zstack
-        .edgesIgnoringSafeArea(.top)
-        
+        .ignoresSafeArea()
         
     } // fin body
 } // fin struc
@@ -26,3 +27,11 @@ struct noirView: View {
 #Preview {
     noirView()
 }
+
+
+
+
+//Capsule()
+//    .frame(width: 300, height: 100)
+//    .foregroundColor(Color(.secondarySystemBackground))
+//    .shadow(radius: 10)

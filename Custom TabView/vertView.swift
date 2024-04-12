@@ -17,7 +17,7 @@ struct vertView: View {
                 .foregroundColor(.white)
             
         } // fin zstack
-        .edgesIgnoringSafeArea(.top)
+        .ignoresSafeArea()
 
         
         

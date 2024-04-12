@@ -17,7 +17,7 @@ struct rougeView: View {
                 .foregroundColor(.white)
             
         } // fin zstack
-        .edgesIgnoringSafeArea(.top)
+        .ignoresSafeArea()
 
         
         

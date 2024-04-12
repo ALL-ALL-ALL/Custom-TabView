@@ -17,7 +17,7 @@ struct orangeView: View {
                 .foregroundColor(.white)
             
         } // fin zstack
-        .edgesIgnoringSafeArea(.top)
+        .ignoresSafeArea()
 
         
         
