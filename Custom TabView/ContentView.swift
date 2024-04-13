@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab: Int? // État pour suivre l'onglet sélectionné
+    @State private  var selectedTab: Int = 1  // mi sur le 1 direct
 
     var body: some View {
        
-       Spacer()
         switch selectedTab {
                    case 1:
                        noirView()
@@ -28,17 +27,28 @@ struct ContentView: View {
         
         
 
+        
+        
 
         HStack {
+            
+            
+            
+            
             Button(action: {
                 selectedTab = 1 // Sélectionne l'onglet numéro 1
+                
             }, label: {
                 
                 ZStack {
                     Circle()
+                        .foregroundColor(selectedTab == 1 ? .purple : .yellow) // Change la couleur en fonction de la sélection
+
                         .foregroundColor(.yellow)
                         .frame(width: 80, height: 80)
+                    
                     Image(systemName: "1.circle.fill")
+                        .foregroundColor(selectedTab == 1 ? .white : .black) // Change la couleur en fonction de la sélection
                         .foregroundColor(.black)
                         .font(.system(size: 40))
                     
@@ -54,9 +64,14 @@ struct ContentView: View {
                 
                 ZStack {
                     Circle()
+                        .foregroundColor(selectedTab == 2 ? .purple : .yellow) // Change la couleur en fonction de la sélection
+
+                    
                         .foregroundColor(.yellow)
                         .frame(width: 80, height: 80)
                     Image(systemName: "2.circle.fill")
+                        .foregroundColor(selectedTab == 2 ? .white : .black) // Change la couleur en fonction de la sélection
+
                         .foregroundColor(.black)
                         .font(.system(size: 40))
                     
@@ -73,9 +88,13 @@ struct ContentView: View {
                 
                 ZStack {
                     Circle()
+                        .foregroundColor(selectedTab == 3 ? .purple : .yellow) // Change la couleur en fonction de la sélection
+
                         .foregroundColor(.yellow)
                         .frame(width: 80, height: 80)
                     Image(systemName: "3.circle.fill")
+                        .foregroundColor(selectedTab == 3 ? .white : .black) // Change la couleur en fonction de la sélection
+
                         .foregroundColor(.black)
                         .font(.system(size: 40))
                     
@@ -92,9 +111,13 @@ struct ContentView: View {
                 
                 ZStack {
                     Circle()
+                        .foregroundColor(selectedTab == 4 ? .purple : .yellow) // Change la couleur en fonction de la sélection
+
                         .foregroundColor(.yellow)
                         .frame(width: 80, height: 80)
                     Image(systemName: "4.circle.fill")
+                        .foregroundColor(selectedTab == 4 ? .white : .black) // Change la couleur en fonction de la sélection
+
                         .foregroundColor(.black)
                         .font(.system(size: 40))
                     
@@ -109,7 +132,6 @@ struct ContentView: View {
             
            
         } // fin HSTACK
-        .ignoresSafeArea()
         
         
         
